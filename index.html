@@ -133,14 +133,39 @@
         </div>
     </section>
 
-    <!-- 在 body 中添加 AI 對話區域 -->
-    <div class="chat-container">
-        <div class="chat-box" id="chat-box">
-            <!-- 對話內容將在這裡顯示 -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>聯絡資訊</h3>
+                    <p>電話：(02) 1234-5678</p>
+                    <p>信箱：info@studio.com</p>
+                    <p>地址：台北市信義區信義路100號</p>
+                </div>
+                <div class="footer-section">
+                    <h3>關注我們</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section chat-section">
+                    <h3>AI客服</h3>
+                    <div class="chat-container">
+                        <div class="chat-box" id="chat-box">
+                            <!-- 對話內容將在這裡顯示 -->
+                        </div>
+                        <input type="text" id="user-input" placeholder="請輸入您的問題..." />
+                        <button id="send-button">發送</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 影像工作室，保留所有權利</p>
+            </div>
         </div>
-        <input type="text" id="user-input" placeholder="請輸入您的問題..." />
-        <button id="send-button">發送</button>
-    </div>
+    </footer>
 
     <script>
         let lastScrollTop = 0;
@@ -235,29 +260,5 @@
             chatBox.scrollTop = chatBox.scrollHeight; // 滾動到最新消息
         });
     </script>
-
-    <footer id="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>聯絡資訊</h3>
-                    <p>電話：(02) 1234-5678</p>
-                    <p>信箱：info@studio.com</p>
-                    <p>地址：台北市信義區信義路100號</p>
-                </div>
-                <div class="footer-section">
-                    <h3>關注我們</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 影像工作室，保留所有權利</p>
-            </div>
-        </div>
-    </footer>
 </body>
 </html> 
