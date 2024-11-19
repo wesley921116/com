@@ -29,12 +29,12 @@
             <p>為您的故事留最動人的瞬間</p>
             <div class="cta-buttons">
                 <a href="#about" class="btn primary">查看作品</a>
-                <a href="#contact" class="btn secondary">預約拍攝</a>
+                <a href="#footer" class="btn secondary">預約拍攝</a>
             </div>
         </div>
     </section>
 
-    <!-- Hero 區域之後... -->
+    <!-- 關於我們區塊 -->
     <section id="about" class="about-section">
         <div class="container">
             <div class="about-content">
@@ -110,7 +110,7 @@
         </div>
     </section>
 
-    <!-- 服務項目區塊移到後面 -->
+    <!-- 服務項目區塊 -->
     <section id="services" class="services-section">
         <div class="container">
             <div class="services-content">
@@ -212,18 +212,6 @@
 
         document.querySelectorAll('.about-content, .services-content, .portfolio-content').forEach(el => {
             observer.observe(el);
-        });
-
-        // 添加圖片載入檢查
-        window.addEventListener('load', function() {
-            const images = document.querySelectorAll('img');
-            images.forEach(img => {
-                img.addEventListener('error', function() {
-                    console.log('圖片載入失敗:', this.src);
-                    // 如果圖片載入失敗，使用替代圖片
-                    this.src = 'https://picsum.photos/1920/1080?random=' + Math.random();
-                });
-            });
         });
 
         const apiKey = 'sk-eBwZn7atWGvUp3PuBc7b4cB0Ee15414389C8448f0962Bc61'; // 替換為你的 API 金鑰
